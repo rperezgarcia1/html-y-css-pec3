@@ -1,0 +1,679 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding: 15px 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.cabecera,
+.principal {
+  background-color: #e8e8e8;
+
+  color: #1c1c1c;
+}
+
+.principal {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-family: 'Noto Serif', serif;
+}
+
+.red {
+  color: #9b1700;
+}
+
+.principal h1,
+.principal h2,
+.principal p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.principal h1,
+.principal h2 {
+  width: 100%;
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.principal h2 {
+  font-weight: 400;
+}
+
+.pagina-actual {
+  font-style: italic;
+}
+
+.link-rojo,
+.link-rojo:link
+.link-rojo:visited,
+.link-rojo:active,
+.link-rojo:visited:active {
+  text-decoration: none;
+  color: #9b1700;
+}
+
+.link-rojo:hover,
+.link-rojo:visited:hover {
+  text-decoration: none;
+  color: #9b170080;
+}
+
+/* Estilos de la cabecera */
+
+.cabecera {
+  padding: 10px;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera > * {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  order: 2;
+}
+
+.contenedor-links-cabecera {
+  order: 3;
+}
+
+.iniciar-sesion {
+  order: 1;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo-img {
+  width: 70px;
+  padding: 5px 10px;
+}
+
+.boton {
+  padding: .5rem .7rem;
+  margin: 10px 0;
+
+  color: #ffffff;
+  background-color: #9b1700;
+  text-decoration: none;
+
+  border-radius: 5px;
+  box-shadow: none;
+
+  cursor: pointer;
+}
+
+.boton:link,
+.boton:visited,
+.boton:active,
+.boton:visited:active {
+  background-color: #9b1700;
+}
+
+.boton:hover,
+.boton:visited:hover {
+  background-color: #9b170080;
+}
+
+.index-link {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.link-cabecera {
+  padding: 5px;
+
+  width: 100%;
+
+  text-align: center;
+  color: #1c1c1c;
+  font-size: .8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-cabecera:active,
+.link-cabecera:visited:active {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.link-cabecera:hover,
+.link-cabecera:visited:hover {
+  color: #1c1c1c80;
+}
+
+/* Estilos del pie de página */
+
+.footer {
+  padding: 10px;
+
+  background-color: #433a44;
+
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:active,
+.footer a:visited:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:visited:hover {
+  color: #9b1700;
+}
+
+.footer-credits {
+  width: 100%;
+
+  font-size: .65rem;
+}
+
+.footer-list {
+  width: 100%;
+
+  list-style-type: none;
+}
+
+.footer-list li,
+.footer-credits p {
+  margin: 3px 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.gototop {
+  position: relative;
+  left: 95%;
+  bottom: 10px;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+/* Estilos de index.html*/
+
+.howto {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.howto-img {
+  width: 45%;
+  max-width: 350px;
+}
+
+.howto-tag {
+  width: 100%;
+}
+
+.registrarse {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-input {
+  margin: 5px 0;
+  padding: 10px;
+
+  width: 100%;
+
+  border: 1px solid #1c1c1c;
+  border-radius: 0;
+}
+
+.form-nota-legal,
+.checkbox-label {
+  font-size: .6rem;
+}
+
+/* Estilos de clubes-tematicos.html*/
+.club-captions {
+  align-items: flex-start;
+}
+
+.club-caption {
+  justify-content: flex-start;
+  margin: 0 20px;
+
+  width: 100%;
+  max-width: 340px;
+}
+
+.club-caption h2 {
+  text-align: left;
+}
+
+.club-caption h2:before {
+  margin-left: 5px;
+  margin-right: 1rem;
+  content:'······';
+  font-size:1.5rem;
+  line-height: inherit;
+  color: #9b1700;
+}
+
+.club-caption-img {
+  width: 100%;
+}
+
+/* Estilos de sesiones-2020.html*/
+.sesiones {
+  align-items: flex-start;
+}
+
+.navegador-sesiones {
+  width: 100%;
+  margin-bottom: .5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.navegador-sesiones h1 {
+  text-align: left;
+}
+
+.lista-sesiones li {
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+.lista-sesiones li a {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.cartelera {
+  width: 100%;
+}
+
+.cartelera-club {
+  margin-bottom: 50px;
+}
+
+.cartelera-club h2 {
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cartelera-club h2:before {
+  margin-left: 5px;
+  margin-right: 1rem;
+  content:'···';
+  font-size:1.5rem;
+  line-height: inherit;
+  color: #9b1700;
+}
+
+.sesion {
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-decoration: none;
+}
+
+.sesion * {
+  width: 52%;
+}
+
+.sesion:hover,
+.sesion:visited:hover {
+  opacity: .5;
+}
+
+.sesion > p {
+  margin: 0;
+  padding: 10px 7px;
+  background-color: #ffffff;
+  color: #9b1700;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* Estilos de detalle-sesion.html */
+.detalle-sesion {
+  justify-content: flex-start;
+}
+
+.detalle-sesion > * {
+  width: 100%;
+}
+
+.detalle-sesion h1,
+.detalle-sesion h2 {
+  text-align: left;
+}
+
+.detalle-sesion h1 {
+  font-size: 1.4rem;
+}
+
+.detalle-sesion h2 {
+  margin: 25px 0 10px 0;
+  font-weight: bold;
+}
+
+.detalle-sesion h3 {
+  margin: 15px 0 8px 0;
+
+  font-size: 1rem;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.detalle-sesion p {
+  margin: 0;
+}
+
+.detalle-sesion li {
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+.detalle-sesion img {
+  float: left;
+  margin: 5px;
+  max-width: 180px;
+
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle();
+}
+
+.detalle-sesion iframe {
+  max-width: 540px;
+}
+
+.descripcion-de-la-obra > * {
+  width: 100%;
+}
+
+.breadcrumb {
+  margin: 20px auto;
+  padding: 10px 16px;
+
+  width: auto;
+
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul.breadcrumb li {
+  padding: 0;
+  display: inline;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 6px;
+  content: "/";
+}
+
+ul.breadcrumb li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb-actual,
+ul.breadcrumb li a:visited:hover,
+ul.breadcrumb li a:hover {
+  color: #1c1c1c80;
+}
+
+.movie-sources li {
+  padding: 0;
+  display: inline;
+}
+
+.movie-sources li+li::before {
+  padding: 4px;
+  content: "|";
+}
+
+.movie-sources li a {
+  display: inline-block;
+
+  color: #1c1c1c;
+  font-size: .9rem;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.movie-sources li a::first-letter {
+  font-size: 1.2rem;
+}
+
+
+/* A partir de 790px el diseño deja de verse bien.*/
+@media only screen and (min-width: 790px) {
+  /* Estilos de la cabecera */
+  .cabecera {
+    justify-content: space-between;
+  }
+  .cabecera > * {
+    width: auto;
+    order: unset;
+  }
+  .link-cabecera {
+    width: auto;
+  }
+  /* Estilos del pie de página*/
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .legal-list {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .media-list {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .footer-credits{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .footer-list li {
+    width: auto;
+  }
+  .footer-list li:before {
+    margin: 0 7px;
+    content:'·';
+    font-size:1rem;
+    vertical-align:middle;
+    line-height:1.5;
+  }
+  .footer-list li:first-child:before {
+    content:'';
+    margin: 0;
+  }
+  .legal-list {
+    justify-content: flex-start;
+  }
+  .media-list {
+    justify-content: flex-end;
+  }
+  .footer-credits p {
+    text-align: left;
+  }
+  .gototop-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .gototop {
+    position: unset;
+  }
+  /* Estilos de index.html*/
+  .oscarsclub {
+    width: 55%;
+    margin: auto;
+  }
+  .howtos {
+    width: 70%;
+    margin: auto;
+    align-items: flex-start;
+  }
+  .unete {
+    width: 70%;
+    margin: auto;
+  }
+  .esquema-con-pie {
+    width: 25%; 
+  }
+/* Estilos de clubes-tematicos.html*/
+  .clubs-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .club-caption {
+    max-width: min(27%, 340px);
+  }
+  .club-caption h2:before {
+    content:'····';
+  }
+/* Estilos de sesiones-2020.html*/
+  .cartelera-club {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cartelera-club h2:before {
+    content: '·····';
+  }
+  .sesiones {
+    width: 70%;
+
+    border-top: 4px dotted rgb(155, 23, 0);
+  }
+  .sesion {
+    width: 30%;
+    align-items: unset;
+  }
+  .sesion * {
+    width: 100%;
+  }
+  .sesion > p {
+    display: flex;
+    align-items: end;
+  }
+/* Estilos de detalle-sesion.html */
+  .detalle-sesion {
+    display: grid;
+    grid-template-columns: 4.5fr 7.5fr 1fr 12fr 4.5fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: flex-start;
+  }
+  .ficha-tecnica {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .descripcion-de-la-obra {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .first-row {
+    grid-column: 2 / 4;
+    grid-row: 1;
+  }
+  .second-row {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+  .breadcrumb {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Estilos generales */
+  .principal h1 {
+    font-size: 1.5rem;
+  }
+  /* Estilos de index.html*/
+  .unete {
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .unete h2,
+  .form-container {
+    margin: 15px 3%;
+    width: 39%;
+  }
+  .unete h2 {
+    text-align: left;
+  }
+  /* Estilos de clubes-tematicos.html*/
+  /* Estilos de sesiones-2020.html*/
+  .sesiones {
+    display: grid;
+    grid-template-columns: 3fr 1fr 9fr;
+  }
+  .navegador-sesiones {
+    grid-column: 1;
+  }
+  .cartelera {
+    grid-column: 3;
+  }
+}

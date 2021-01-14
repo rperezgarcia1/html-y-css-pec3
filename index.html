@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='utf-8'>
+  <title>OscarsClub - Home</title>
+  <meta name='author' content='Ramon Pérez'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='icon' href='img/favicon.ico'>
+  <link rel='stylesheet' href='styles.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <header class='flex-container cabecera ' id='cabecera'>
+    <div class='logo'>
+      <img class='logo-img' src='img/oscarsclub-isologo.png' alt=''>
+      <a class='index-link' href='index.html'><strong>oscars</strong><em class='red'>club</em></a>
+    </div>
+    <div class='contenedor-links-cabecera'>
+      <a href='clubes-tematicos.html' class='link-cabecera'>CLUBES TEMÁTICOS</a>
+      <a href='sesiones-2020.html' class='link-cabecera'>SESIONES 2020</a>
+    </div>
+    <div class='flex-container'>
+      <a href='' class='boton iniciar-sesion'>Iniciar sesión</a>
+    </div>
+  </header>
+  <main class='principal'>
+    <div class='flex-container oscarsclub'>
+      <h1>¿Qué es Oscars Club?</h1>
+      <p class='texto-centrado'>Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que les interesan sin necesidad de ir a un espacio físico.
+      </p>
+    </div>
+    <div class='flex-container howtos'>     
+      <h1>¿Cómo funciona?</h1>
+      <div class='flex-container esquema-con-pie'>
+        <div class='howto'>
+          <img class='howto-img' src='img/howto-register.png' alt=''>
+        </div>
+        <p class='howto-tag texto-centrado'>Regístrate
+        </p>
+      </div>
+      <div class='flex-container esquema-con-pie'>
+        <div class='howto'>
+          <img class='howto-img' src='img/howto-club.png' alt=''>
+        </div>
+        <p class='howto-tag texto-centrado'>Inscríbete en un club
+        </p>
+      </div>
+      <div class='flex-container esquema-con-pie'>
+        <div class='howto'>
+          <img class='howto-img' src='img/howto-film.png' alt=''>
+        </div>
+        <p class='howto-tag texto-centrado'>Elige una película
+        </p>
+      </div>
+      <div class='flex-container esquema-con-pie'>
+        <div class='howto'>
+          <img class='howto-img' src='img/howto-speech.png' alt=''>
+        </div>
+        <p class='howto-tag texto-centrado'>Disfruta del debate
+        </p>
+      </div>
+    </div>
+    <div class='flex-container unete'>
+      <h1>Únete al club</h1>
+      <h2>Estamos mirando tu próxima película preferida. ¿Te lo vas a perder?</h2>
+      <div class='form-container'>
+        <form class='registrarse'>
+          <input class='form-input' type='text' id='nombre' name='nombre' minlength='2' maxlength='64' pattern="^[a-zA-Z\s'\-À-ÿ]+$" placeholder='Nombre' required>
+          <input class='form-input' type='email' id='correo' name='correo' placeholder='Correo electrónico' required>
+          <input class='form-input' type='password' id='contrasena' name='contrasena' placeholder='Contraseña' required>
+          <p class='form-nota-legal'>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>OSCARS CLUB</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: consentimiento del interesado. <strong>Destinatarios</strong>: no están previstas cesiones de datos a terceros, salvo obligación legal. <strong>Derechos</strong>: puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a oscarsclub@oscarsclub.com. <strong>Información adicional</strong>: puede ampliar la información en el enlace de <a class='link-rojo' href=''>Aviso legal</a> y <a class='link-rojo' href=''>Política de privacidad</a>.
+          </p>
+          <div>
+            <input class="checkbox" type="checkbox" id="aceptacion" name="aceptacion">
+            <label class="checkbox-label" for="aceptacion">He leído y acepto la política de privacidad.
+            </label>
+          </div>
+          <input class='boton submit' type='submit' value='REGISTRARSE'>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class='footer'>
+    <ul class='footer-list flex-container legal-list'>
+      <li><a href=''>Sobre nosotros</a></li>
+      <li><a href=''>Aviso legal</a></li>
+      <li><a href=''>Política de privacidad</a></li>
+    </ul>
+    <ul class='footer-list flex-container media-list'>
+      <li><a href=''>Facebook</a></li>
+      <li><a href=''>Twitter</a></li>
+      <li><a href=''>Youtube</a></li>
+    </ul>
+    <div class='footer-credits flex-container'>
+      <p>© 2020 Ramon Pérez Garcia</p>
+      <p><a href='https://www.flaticon.com'>Iconos flaticon.com</a></p>
+      <p><a href='https://unsplash.com'>Imágenes unsplash.com</a></p>
+    </div>
+    <div class='gototop-container'><a class='gototop' href='#cabecera'>&xwedge;</a></div>
+  </footer>
+</body>
+
+</html>
